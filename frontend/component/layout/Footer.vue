@@ -15,7 +15,7 @@ export default {
 
 <style>
 a {
-  color: lightgreen;
+  color: #90eeee;
   text-decoration: none;
 }
 a:hover {

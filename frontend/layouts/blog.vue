@@ -37,7 +37,7 @@ export default {
 
 .wrapper {
   min-height: 100%;
-  max-width: 60%;
+  max-width: 80%;
   margin: 0 auto -20px;
 }
 .footer,

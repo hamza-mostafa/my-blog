@@ -6,7 +6,9 @@
         class="h1 title"
         v-text="article.title"
       />
-      <div class="float-right">{{article.created_at | moment("from", "now")}}</div>
+      <div class="float-right">
+        {{article.created_at | moment("from", "now")}}
+      </div>
       <div class="hr"></div>
     </div>
     <img
@@ -24,8 +26,10 @@ export default {
   layout: 'blog',
   async asyncData({ app, params }) {
     const article = await app.$axios.$get(
-      `http://localhost:8000/api/articles/${params.slug}`
+      `${app.$axios.defaults.baseURL}/api/articles/${params.slug}`
     )
+    console.log(article)
+    console.log(app.$axios.defaults.baseURL)
     return { article }
   }
 }
