@@ -61,6 +61,6 @@ export default {
   );
   text-align: right;
   padding-right: 20%;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 </style>
