@@ -18,7 +18,6 @@ use Illuminate\Http\Request;
 // });
 
 
-// Route::domain('api.hamzamostafa.me')->group(function () {
 Route::get('articles', function () {
     return TCG\Voyager\Models\Post::all();
 });
@@ -26,4 +25,3 @@ Route::get('articles', function () {
 Route::get('articles/{slug}', function ($slug) {
     return TCG\Voyager\Models\Post::where('slug', $slug)->first();
 });
-// });

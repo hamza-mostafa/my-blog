@@ -57,7 +57,7 @@ export default {
   axios: {
     /* set API_URL environment variable to configure access to the API
     */
-    baseURL: 'http://localhost:8000' || process.env.API_URL || 'https://hamzamostafa.me/api',
+    baseURL: process.env.API_URL || 'https://api.hamzamostafa.me',
     redirectError: {
       401: '/login',
       404: '/notfound'
