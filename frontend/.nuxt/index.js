@@ -16,6 +16,7 @@ import nuxt_plugin_nuxticons_de0e0d86 from 'nuxt_plugin_nuxticons_de0e0d86' // S
 import nuxt_plugin_bootstrapvue_f077e3cc from 'nuxt_plugin_bootstrapvue_f077e3cc' // Source: ./bootstrap-vue.js (mode: 'all')
 import nuxt_plugin_axios_70434aeb from 'nuxt_plugin_axios_70434aeb' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_vuenotifications_9509a7aa from 'nuxt_plugin_vuenotifications_9509a7aa' // Source: ../plugins/vue-notifications (mode: 'client')
+import nuxt_plugin_vueparticles_b91bd920 from 'nuxt_plugin_vueparticles_b91bd920' // Source: ../plugins/vue-particles (mode: 'client')
 import nuxt_plugin_vuemoment_1fc97fc6 from 'nuxt_plugin_vuemoment_1fc97fc6' // Source: ../plugins/vue-moment (mode: 'client')
 
 // Component: <ClientOnly>
@@ -164,6 +165,10 @@ async function createApp(ssrContext) {
 
   if (process.client && typeof nuxt_plugin_vuenotifications_9509a7aa === 'function') {
     await nuxt_plugin_vuenotifications_9509a7aa(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_vueparticles_b91bd920 === 'function') {
+    await nuxt_plugin_vueparticles_b91bd920(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_vuemoment_1fc97fc6 === 'function') {

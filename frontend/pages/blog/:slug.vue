@@ -6,7 +6,9 @@
         class="h1 title"
         v-text="article.title"
       />
-      <div class="float-right">{{article.created_at | moment("from", "now")}}</div>
+      <div class="float-right">
+        {{article.created_at | moment("from", "now")}}
+      </div>
       <div class="hr"></div>
     </div>
     <img

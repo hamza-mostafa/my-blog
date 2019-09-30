@@ -31,6 +31,7 @@ export default {
    */
   plugins: [
     {src: '~/plugins/vue-notifications', ssr: false},
+    {src: '~/plugins/vue-particles', ssr: false},
     {src: '~/plugins/vue-moment', ssr: false}
   ],
   /*
