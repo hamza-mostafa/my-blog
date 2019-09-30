@@ -63,15 +63,15 @@ Route::get('/', function () {
 //     }
 // });
 
-Route::domain('cv.hamzamostafa.me')->group(function () {
-    Route::get('/', function () {
-        return
-            view('welcome');
-    });
+// Route::domain('cv.hamzamostafa.me')->group(function () {
+Route::get('/api', function () {
+    return
+        view('welcome');
 });
+// });
 
-Route::domain('admin.hamzamostafa.me')->group(function () {
-    Route::get('/', function () {
-        Voyager::routes();
-    });
+// Route::domain('admin.hamzamostafa.me')->group(function () {
+Route::get('/', function () {
+    Voyager::routes();
 });
+// });
