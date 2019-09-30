@@ -1,23 +1,25 @@
 <template>
   <div class="container">
-    <vue-particles
-      color="#555"
-      :particleOpacity="0.7"
-      :particlesNumber="200"
-      shapeType="circle"
-      :particleSize="4"
-      linesColor="#90eeee"
-      :linesWidth="0.5"
-      :lineLinked="true"
-      :lineOpacity="0.7"
-      :linesDistance="200"
-      :moveSpeed="2"
-      :hoverEffect="true"
-      hoverMode="grab"
-      :clickEffect="true"
-      clickMode="repulse"
-    >
-    </vue-particles>
+    <client-only>
+      <vue-particles
+        color="#555"
+        :particleOpacity="0.7"
+        :particlesNumber="200"
+        shapeType="circle"
+        :particleSize="4"
+        linesColor="#90eeee"
+        :linesWidth="0.5"
+        :lineLinked="true"
+        :lineOpacity="0.7"
+        :linesDistance="200"
+        :moveSpeed="2"
+        :hoverEffect="true"
+        hoverMode="grab"
+        :clickEffect="true"
+        clickMode="repulse"
+      >
+      </vue-particles>
+    </client-only>
     <div class="memo">
       Note to self ...
     </div>
