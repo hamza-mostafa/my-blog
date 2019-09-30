@@ -64,10 +64,14 @@ Route::get('/', function () {
 // });
 
 Route::domain('cv.hamzamostafa.me')->group(function () {
-    return
-        view('welcome');
+    Route::get('/', function () {
+        return
+            view('welcome');
+    });
 });
 
 Route::domain('admin.hamzamostafa.me')->group(function () {
-    Voyager::routes();
+    Route::get('/', function () {
+        Voyager::routes();
+    });
 });
