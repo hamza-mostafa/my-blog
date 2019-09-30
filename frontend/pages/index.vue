@@ -38,7 +38,7 @@ export default {
   font-weight: 600;
   position: absolute;
   bottom: 0;
-  right: 25%;
+  right: 15%;
 }
 vue-particles {
   height: 100%;
