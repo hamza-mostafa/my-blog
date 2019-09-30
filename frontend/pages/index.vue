@@ -1,22 +1,23 @@
 <template>
-  <layout>
-    <div class="page_content">
-      <div class="container">
-        <div class="row row-lg-eq-height">
-          <Main />
-        </div>
-      </div>
+  <div class="container">
+    <div class="memo">
+      Note to self ..
     </div>
-  </layout>
+  </div>
 </template>
 
 <script>
-import Layout from '~/layouts/Default'
-import Main from '~/components/Main'
 export default {
-  components: {
-    Layout,
-    Main
-  }
+  layout: 'default'
 }
 </script>
+
+<style>
+.memo {
+  font-size: 50px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  right: 25%;
+}
+</style>

@@ -23,11 +23,16 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    '@/assets/vue-navigation-bar.css'
+  ],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    {src: '~/plugins/vue-notifications', ssr: false},
+    {src: '~/plugins/vue-moment', ssr: false}
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -49,7 +54,15 @@ export default {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    /* set API_URL environment variable to configure access to the API
+    */
+    baseURL: 'http://localhost:8000' || process.env.API_URL || 'https://hamzamostafa.me/api',
+    redirectError: {
+      401: '/login',
+      404: '/notfound'
+    }
+  },
   /*
    ** Build configuration
    */

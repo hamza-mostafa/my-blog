@@ -7,10 +7,12 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css'
 
-import _5ab6bd2a from '../layouts/Default.vue'
-import _6f6c098b from './layouts/default.vue'
+import '../assets/vue-navigation-bar.css'
 
-const layouts = { "_Default": _5ab6bd2a,"_default": _6f6c098b }
+import _2d21d098 from '../layouts/blog.vue'
+import _6f6c098b from '../layouts/default.vue'
+
+const layouts = { "_blog": _2d21d098,"_default": _6f6c098b }
 
 export default {
   head: {"title":"myblog","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"my tech learning journey documented"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"myblog"},{"hid":"author","name":"author","content":"Hamza Mostafa"},{"hid":"theme-color","name":"theme-color","content":"#fff"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"myblog"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"myblog"},{"hid":"og:description","name":"og:description","property":"og:description","content":"my tech learning journey documented"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.aa58f4a8.json"},{"rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64.46472c.png"},{"rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512.46472c.png","sizes":"512x512"}],"style":[],"script":[],"htmlAttrs":{"lang":"en"}},

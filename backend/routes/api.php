@@ -16,3 +16,11 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('articles', function () {
+    return TCG\Voyager\Models\Post::all();
+});
+
+Route::get('articles/{slug}', function ($slug) {
+    return TCG\Voyager\Models\Post::where('slug', $slug)->first();
+});

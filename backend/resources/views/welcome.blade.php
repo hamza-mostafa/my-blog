@@ -260,24 +260,25 @@
                     <span class="gpa">Javascript</span>
                     {{--                    <span class="gpa2">Java</span>--}}
                     {{--                    <span class="gpa2">Python</span>--}}
-                    <h4>Programs</h4>
-                    <span class="gpa">Netbeans</span>
+                    {{-- <h4>Programs</h4>
                     <span class="gpa">VS Code</span>
                     {{--                    <span class="gpa">Sublime</span>--}}
-                    <span class="gpa2">PHPStorm</span>
+                    <span class="gpa">PHPStorm</span>
                     <h4>Databases</h4>
                     <span class="gpa">MongoDB</span>
                     <span class="gpa">MySQL</span>
                     <span class="gpa">Redis</span>
                     <h4>Stacks</h4>
                     <span class="gpa">LAMP</span>
+                    <span class="gpa">LEMP</span>
                     <span class="gpa">MEVN</span>
                     <span class="gpa">MERN</span>
                     <h4>Git/Scrum</h4>
                     <span class="gpa">Github</span>
+                    <span class="gpa">Gitlab</span>
                     <span class="gpa">BitBucket</span>
                     <span class="gpa">TFS</span>
-                    <span class="gpa">Trello</span>
+                    {{-- <span class="gpa">Trello</span> --}}
                     <h4>other tech</h4>
                     <span class="gpa">Docker</span>
                     <span class="gpa">Laravel Mix</span>

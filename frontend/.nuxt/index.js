@@ -11,10 +11,12 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_workbox_2bce198b from 'nuxt_plugin_workbox_2bce198b' // Source: ./workbox.js (mode: 'client')
-import nuxt_plugin_nuxticons_7b5d7a79 from 'nuxt_plugin_nuxticons_7b5d7a79' // Source: ./nuxt-icons.js (mode: 'all')
-import nuxt_plugin_bootstrapvue_0d9f335e from 'nuxt_plugin_bootstrapvue_0d9f335e' // Source: ./bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_axios_2ca9f42f from 'nuxt_plugin_axios_2ca9f42f' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_workbox_23269d72 from 'nuxt_plugin_workbox_23269d72' // Source: ./workbox.js (mode: 'client')
+import nuxt_plugin_nuxticons_de0e0d86 from 'nuxt_plugin_nuxticons_de0e0d86' // Source: ./nuxt-icons.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_f077e3cc from 'nuxt_plugin_bootstrapvue_f077e3cc' // Source: ./bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_axios_70434aeb from 'nuxt_plugin_axios_70434aeb' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_vuenotifications_9509a7aa from 'nuxt_plugin_vuenotifications_9509a7aa' // Source: ../plugins/vue-notifications (mode: 'client')
+import nuxt_plugin_vuemoment_1fc97fc6 from 'nuxt_plugin_vuemoment_1fc97fc6' // Source: ../plugins/vue-moment (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -144,20 +146,28 @@ async function createApp(ssrContext) {
 
   // Plugin execution
 
-  if (process.client && typeof nuxt_plugin_workbox_2bce198b === 'function') {
-    await nuxt_plugin_workbox_2bce198b(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_23269d72 === 'function') {
+    await nuxt_plugin_workbox_23269d72(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_nuxticons_7b5d7a79 === 'function') {
-    await nuxt_plugin_nuxticons_7b5d7a79(app.context, inject)
+  if (typeof nuxt_plugin_nuxticons_de0e0d86 === 'function') {
+    await nuxt_plugin_nuxticons_de0e0d86(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_bootstrapvue_0d9f335e === 'function') {
-    await nuxt_plugin_bootstrapvue_0d9f335e(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_f077e3cc === 'function') {
+    await nuxt_plugin_bootstrapvue_f077e3cc(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_2ca9f42f === 'function') {
-    await nuxt_plugin_axios_2ca9f42f(app.context, inject)
+  if (typeof nuxt_plugin_axios_70434aeb === 'function') {
+    await nuxt_plugin_axios_70434aeb(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_vuenotifications_9509a7aa === 'function') {
+    await nuxt_plugin_vuenotifications_9509a7aa(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_vuemoment_1fc97fc6 === 'function') {
+    await nuxt_plugin_vuemoment_1fc97fc6(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first
