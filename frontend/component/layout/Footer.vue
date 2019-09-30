@@ -1,10 +1,10 @@
 <template>
   <!-- prettier-ignore -->
   <div>
-    <a
+    <!-- <a
       href="http://hamzamostafa.me"
       class="text"
-    >by Hamza</a>
+    >by Hamza</a> -->
   </div>
 </template>
 <script>

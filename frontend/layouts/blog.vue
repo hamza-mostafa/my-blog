@@ -51,16 +51,16 @@ export default {
   color: white;
   background-image: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0) 20%,
-    #555 27%,
+    rgba(0, 0, 0, 0) 10%,
+    #555 17%,
     #555,
     #555,
     #555,
-    #555 72%,
-    rgba(0, 0, 0, 0) 80%
+    #555 82%,
+    rgba(0, 0, 0, 0) 90%
   );
   text-align: right;
-  padding-right: 25%;
+  padding-right: 20%;
   margin-top: 50px;
 }
 </style>
