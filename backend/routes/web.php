@@ -13,7 +13,8 @@ which | contains the &quot;web&quot; middleware group. Now create
 something great! | */
 
 Route::get('/', function () {
-    redirect('/blog');
+    return
+        view('welcome');
 });
 
 // Route::get('send_test_email', function () {
@@ -63,15 +64,7 @@ Route::get('/', function () {
 //     }
 // });
 
-// Route::domain('cv.hamzamostafa.me')->group(function () {
-Route::get('/api', function () {
-    return
-        view('welcome');
-});
-// });
 
-// Route::domain('admin.hamzamostafa.me')->group(function () {
-Route::get('/', function () {
+Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
-// });
