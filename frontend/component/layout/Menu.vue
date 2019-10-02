@@ -1,7 +1,7 @@
 <template>
   <!-- prettier-ignore -->
   <client-only>
-    <vue-navigation-bar :options="navbarOptions" />
+    <!-- <vue-navigation-bar :options="navbarOptions" /> -->
   </client-only>
 </template>
 

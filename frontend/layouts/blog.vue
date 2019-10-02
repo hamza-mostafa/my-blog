@@ -2,12 +2,12 @@
   <div class="contain">
     <div class="wrapper bg">
       <Header class="header">
-        <Menu class="menu" />
+        <!-- <Menu class="menu" /> -->
       </Header>
       <Nuxt />
       <div class="push"></div>
     </div>
-    <Footer class="footer">Here</Footer>
+    <Footer class="footer"></Footer>
   </div>
 </template>
 

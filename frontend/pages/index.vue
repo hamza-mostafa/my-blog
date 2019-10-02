@@ -21,7 +21,7 @@
       </vue-particles>
     </client-only>
     <div class="memo">
-      Note to self ...
+      Notes to self ...
     </div>
   </div>
 </template>
