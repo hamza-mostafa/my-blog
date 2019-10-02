@@ -2,7 +2,7 @@
   <div class="contain">
     <div class="wrapper bg">
       <Header class="header">
-        <!-- <Menu class="menu" /> -->
+        <Menu class="menu" />
       </Header>
       <Nuxt />
       <div class="push"></div>
