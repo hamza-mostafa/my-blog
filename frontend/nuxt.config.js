@@ -49,7 +49,11 @@ export default {
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    ['@nuxtjs/google-tag-manager', { id: 'GTM-XXXXXXX' }],
+   ['@nuxtjs/google-analytics', {
+      id: 'UA-75501224-2'
+    }]
   ],
   /*
    ** Axios module configuration

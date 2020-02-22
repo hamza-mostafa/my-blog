@@ -3,9 +3,9 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _727a7df4 = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
-const _02dfd187 = () => interopDefault(import('../pages/blog/:slug.vue' /* webpackChunkName: "pages/blog/:slug" */))
-const _db76bb5a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _dccdc2a2 = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
+const _21fe7242 = () => interopDefault(import('../pages/blog/:slug.vue' /* webpackChunkName: "pages/blog/:slug" */))
+const _0f6d38b8 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
 
@@ -18,15 +18,15 @@ export const routerOptions = {
 
   routes: [{
       path: "/blog",
-      component: _727a7df4,
+      component: _dccdc2a2,
       name: "blog"
     }, {
       path: "/blog/:slug",
-      component: _02dfd187,
+      component: _21fe7242,
       name: "blog-:slug"
     }, {
       path: "/",
-      component: _db76bb5a,
+      component: _0f6d38b8,
       name: "index"
     }],
 

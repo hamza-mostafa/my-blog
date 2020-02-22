@@ -1,0 +1,2 @@
+exports.ids=[2],exports.modules={44:function(t,e,r){"use strict";r.r(e);var l={layout:"default",created(){this.$router.push({path:"/"})}},n=r(1),component=Object(n.a)(l,(function(){var t=this.$createElement;return(this._self._c||t)("div",[])}),[],!1,null,null,"24732529");e.default=component.exports}};
+//# sourceMappingURL=33b16c0b961a9c5d5bcb.js.map

@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75501224-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-75501224-2');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamza Mostafa</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> {{--
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> --}}
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/html2canvas.js"></script>
+    <script src="js/jspdf.min.js"></script>
+
+</head>
+
+<body>
+<!--Start Hero Area-->
+<div id="home" class="hero-area" data-html2canvas-ignore>
+    <div class="hero-bg bg-1">
+        <div class="d-table hero-area-wrapper" style="height: 100vh;">
+            <div class="d-table-cell hero-area-inner">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9 animated bounceInDown">
+                            <h1>Full Stack Developer</h1>
+                            <a href="#about-2"
+                               class="btn hero-btn shake-slow shake-constant shake-constant--hover scrl-down mobile-view">About
+                                Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Hero Area-->
+    </div>
+    <!--Start Main Menu Logo-->
+    <div class="menubar-area" id="mainMenu">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo2.png" alt="" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="scrl-down nav-link" href="#home">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="scrl-down nav-link" href="#about">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="scrl-down nav-link" href="#skill">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="scrl-down nav-link" href="#resume">Resume</a>
+                        </li>
+                        {{--
+                        <li class="nav-item">
+                            <a class="scrl-down nav-link" href="#testimonial">Testimonials</a>
+                        </li> --}}
+                        <li class="nav-item">
+                            <a class="scrl-down nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="scrl-down nav-link" href="#work-exp">Work Exp.</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="scrl-down nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="scrl-down nav-link" href="#contact">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--End Main Menu Logo-->
+    <!--Start Tartget-->
+    <div class="target-area" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="500">
+                    <div class="single-target-box">
+                        <h1>Values</h1>
+                        <p>Result orientation:
+                            <small>with a customer 1st approach</small>
+                        </p>
+                        <p>Team collaboration:
+                            <small>and a strong focus on the results.</small>
+                        </p>
+                        <p>Passion in work:
+                            <small>to keep it creative.</small>
+                        </p>
+                        <p>Quality over Quantity:
+                            <small>nobody wants 3 broken functions.</small>
+                        </p>
+                        <p>
+                                <span class="gpa">
+                                    <a href="#" data-toggle="Do" title="Don't Repeat Yourself!">DRY </a>
+                                </span>
+                            <small>over</small>
+                            <span class="gpa2">
+                                    <a href="#" data-toggle="Do" title="Write Everything Twice!"> WET</a>
+                                </span>
+                        </p>
+                        <p style="margin-bottom:40px"></p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-offset="150" data-aos-duration="500">
+                    <div class="single-target-box">
+                        <h1>hobbies</h1>
+                        <p id="about-button">Guitar</p>
+                        <p>Photography</p>
+                        <p>Learning new technologies</p>
+                        <span id="about-2"></span>
+                    </div>
+                </div>
+                <!--End of row-->
+            </div>
+            <!--End of container-->
+        </div>
+    </div>
+</div>
+<!--End of Target area-->
+<!--Start About Area-->
+<div id="about" class="about-area" data-aos-offset="150" data-aos-duration="500">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 no-padding">
+                <div class="about-img">
+                    <img src="img/me.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="about-title">
+                            <div id="my-name" class="hide-me">Hamza Mostafa</div>
+                            <h1>About Me</h1>
+                            <p>I love to code, and finally took the leap of faith switching my career to follow my
+                                passion.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6" data-aos="zoom-in-up" data-aos-duration="500">
+                        <div class="single-about-box">
+                            <i class="fa fa-globe"></i>
+                            <h2>Programmer</h2>
+                            {{--
+                            <a href="{{ env('GITHUB') }}" class="show-canvas-html"> .......... github</a>
+                            <p class="show-canvas-html hide-me">
+                                <span>github link:</span>{{ env('GITHUB') }}</p> --}}
+                            <br> {{--
+                                <a href="https://hamzamostafa.me#portfolio" class="scrl-down show-canvas-html"> .......... Portfolio</a>
+                                <p class="show-canvas-html hide-me">
+                                    <span>Website:</span>{{ env('APP_URL') }}</p> --}}
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6" data-aos="zoom-in-up" data-aos-offset="-50" data-aos-duration="500">
+                        <div class="single-about-box">
+                            <i class="fa fa-globe"></i>
+                            <h2>Web Designer</h2>
+                            {{--
+                            <a href="{{ env('GITHUB') }}" class="show-canvas-html"> .......... github</a>
+                            <p class="show-canvas-html hide-me">
+                                <span>github link:</span>{{ env('GITHUB') }}</p> --}}
+                            <br> {{--
+                                <a class="show-canvas-html scrl-down" href="https://hamzamostafa.me#portfolio"> .......... Portfolio</a>
+                                <p class="show-canvas-html hide-me">
+                                    <span>Website:</span>{{ env('APP_URL') }}</p> --}}
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6" data-aos="zoom-in-up" data-aos-offset="-50" data-aos-duration="500">
+                        <div class="single-about-box">
+                            <i class="fa fa-globe"></i>
+                            <h2>Marketer</h2>
+                            {{--
+                            <a class="scrl-down show-canvas-html" href="#contact"> .......... on request</a>
+                            <p class="show-canvas-html hide-me">
+                                <span>Mobile:</span>
+                                {{ ENV('MOBILE') }}
+                            </p> --}}
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6" data-aos="zoom-in-up" data-aos-offset="-50" data-aos-duration="500">
+                        <div class="single-about-box">
+                            <i class="fa fa-globe"></i>
+                            <h2>Photographer</h2>
+                            {{--
+                            <a href="{{ env('BEHANCE') }}" class="show-canvas-html"> .......... Behance</a>
+                            <p class="show-canvas-html hide-me">
+                                <span>Behance:</span>{{ env('BEHANCE') }}</p> --}}
+                            <br> {{--
+                                <a href="{{ env('FOTOGRAPHYA') }}" class="show-canvas-html"> .......... Fotographya</a>
+                                <p class="show-canvas-html hide-me">
+                                    <span>Website:</span>{{ env('FOTOGRAPHYA') }}</p>
+                                <br>
+                                <a href="#" class="show-canvas-html"> .......... like my page on facebook</a>
+                                <p class="show-canvas-html hide-me">
+                                    <span>Facebook:</span>{{ env('FACEBOOK') }}</p>
+                                <br>
+                                <a href="{{ env('INSTAGRAM') }}" class="show-canvas-html"> .......... and on Instagram</a>
+                                <p class="show-canvas-html hide-me">
+                                    <span>Instagram:</span>{{ env('INSTAGRAM') }}</p>
+                                <br> --}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of col lg 7-->
+        </div>
+        <!--End of row-->
+    </div>
+    <!--End of container Fluid-->
+</div>
+<!--End of About Area-->
+<!--Start Skill-->
+<div id="skill" class="skill-area" data-aos-offset="150" data-aos-duration="500">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="skillbar position-sticky fixed-top flat">
+                    <h1>My Skills</h1>
+                    <h4>Frameworks used</h4>
+                    <span class="gpa">Laravel</span>
+                    <span class="gpa">Node.js</span>
+                    <span class="gpa">Adonis.js</span>
+                    <span class="gpa">Express.js</span>
+                    <span class="gpa">Vue.js</span>
+                    <span class="gpa">React.js</span>
+                    {{--                    <span class="gpa2">React Native</span>--}}
+                    {{--
+                    <span class="gpa2">WordPress</span> --}}
+                    <h4>Languages</h4>
+                    <span class="gpa">PHP</span>
+                    <span class="gpa">Javascript</span>
+                    {{--                    <span class="gpa2">Java</span>--}}
+                    {{--                    <span class="gpa2">Python</span>--}}
+                    {{-- <h4>Programs</h4>
+                    <span class="gpa">VS Code</span>
+                    {{--                    <span class="gpa">Sublime</span>--}}
+                    <span class="gpa">PHPStorm</span>
+                    <h4>Databases</h4>
+                    <span class="gpa">MongoDB</span>
+                    <span class="gpa">MySQL</span>
+                    <span class="gpa">Redis</span>
+                    <h4>Stacks</h4>
+                    <span class="gpa">LAMP</span>
+                    <span class="gpa">LEMP</span>
+                    <span class="gpa">MEVN</span>
+                    <span class="gpa">MERN</span>
+                    <h4>Git/Scrum</h4>
+                    <span class="gpa">Github</span>
+                    <span class="gpa">Gitlab</span>
+                    <span class="gpa">BitBucket</span>
+                    <span class="gpa">TFS</span>
+                    {{-- <span class="gpa">Trello</span> --}}
+                    <h4>other tech</h4>
+                    <span class="gpa">Docker</span>
+                    <span class="gpa">Laravel Mix</span>
+                    <span class="gpa">Webpack</span>
+                    <span class="gpa">RabbitMQ</span>
+                    <span class="gpa">ElasticSearch</span>
+                    <div data-html2canvas-ignore>
+                        <a href="#contact" class="btn skill-btn scrl-down nav-link show-canvas-html">contact me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="skill-progress">
+                    <p>html/css</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
+                             aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    <p>Less / Scss</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                             aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    {{--
+                    <p>Scss</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div> --}}
+                    <p>Javascript</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                             aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    <p>php</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                             aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    <p>SQL</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                             aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    <p>Linux</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70"
+                             aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    <p>After Effects</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                             aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    <p>photoshop</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
+                             aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    <p>illsutrator</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                             aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of col lg 6-->
+        </div>
+        <!--End of row-->
+    </div>
+    <!--End of container-->
+</div>
+<!--End of skill area-->
+<!--Strat Resume-->
+<div id="resume" class="resume-area" data-aos-offset="150" data-aos-duration="500" data-html2canvas-ignore>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h1>Resume</h1>
+                <p>You are always welcome on the website for an udpate</p>
+                <a id="downloaderX" href="javascript:downloadPDF()" class="btn cmn-btn resume-btn animated fade-out">Download
+                    Resume as PDF</a>
+                <a id="downloader" href="javascript:downloadJpeg()" class="btn cmn-btn resume-btn animated fade-out">Download
+                    Resume as image</a>
+                <br>
+                <br>
+                <br>
+                <div class="show-canvas-html">
+                    <h2>OR</h2>
+                    <p style="padding-top:1vh">you can email the CV</p>
+                    <form class="form" action="/send_email" method="get">
+                        {{--
+                        <p>
+                            Do you want to enroll in my newsletter?
+                            <span style="font-weight: lighter;"> you can always unsubscribe</span>
+                        </p>
+                        <div class="d-flex justify-content-around p-2">
+                            <div>
+                                <input type="checkbox" name="hr" id="hr"> Yes .. I'm from HR team</div>
+                            <div>
+                                <input type="checkbox" name="dev" id="dev"> Yes .. I'm from Developing team</div>
+                        </div> --}}
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="col-lg-2 col-xs-4 input-group-addon">
+                                        <span class="fa fa-address-card">
+                                            <label class="control-label" for="email">
+                                                Your name
+                                            </label>
+                                        </span>
+                                </div>
+                                <input class="form-control" id="email-name" name="name" type="text" required/>
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <div class="input-group-addon col-lg-2 col-xs-4 ">
+                                        <span class="fa fa-at">
+                                            <label class="control-label" for="email">
+                                                Email Address
+                                            </label>
+                                        </span>
+                                </div>
+                                <input class="form-control" id="email-address" name="address" type="text"/>
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <div class="input-group-addon col-lg-2 col-xs-4 ">
+                                        <span class="fa fa-envelope">
+                                            <label class="control-label" for="email">
+                                                Email Subject
+                                            </label>
+                                        </span>
+                                </div>
+                                <input class="form-control" id="email-subject" name="subject" type="text" required/>
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <div class="input-group-addon col-lg-2 col-xs-4 ">
+                                        <span class="fa fa-file">
+                                            <label class="control-label" for="email">
+                                                Email Body
+                                            </label>
+                                        </span>
+                                </div>
+                                <textarea class="form-control" id="email-subject" name="body" type="text"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn resume-btn animated fade-out">Send!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="education" class="resume-education" data-aos-offset="150" data-aos-duration="500">
+    <div class="container bottom-border">
+        <div id="" class="row">
+            <div class="col-lg-6">
+                <div class="edu position-sticky fixed-top">
+                    <h1>My Education</h1>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="edu-detail-box">
+                    <div class="single-edu">
+                        <h3>Bsc Commerce - english sector</h3>
+                        <p class="edu-date">
+                            <span>Menofia University</span>
+                            <small> September 2008</small>
+                        </p>
+                        <span class="gpa">Accouting</span>
+                        <span class="gpa">Finance</span>
+                        <span class="gpa">Information Systems</span>
+                        <span class="gpa">Manegerial Accounting</span>
+                        <p class="edu-summury"></p>
+                    </div>
+                    <div class="single-edu">
+                        <h3>CMA Certification</h3>
+                        <p class="edu-date">
+                            <span>IMA Institute</span>
+                            <small> Feb 2015</small>
+                        </p>
+                        <span class="gpa">Performance Management</span>
+                        <span class="gpa">Cost Management</span>
+                        <span class="gpa">Planning, Budgeting and Forecasting</span>
+                        <span class="gpa">Internal Controls</span>
+                        <span class="gpa">Financial Statement Analysis</span>
+                        <span class="gpa">Corporate Finance</span>
+                        <span class="gpa">External Financial Reporting Decisions</span>
+                        <span class="gpa">Decision Analysis</span>
+                        <span class="gpa">Risk Management</span>
+                        <span class="gpa">Investment Decisions</span>
+                        <p class="edu-summury">For more than 40 years, the CMA® (Certified Management Accountant)
+                            certification has been the
+                            global benchmark for management accountants and financial professionals. As a US Body; CMA
+                            has the
+                        </p>
+                    </div>
+                    <div class="single-edu">
+                        <h3>ACCA Certification</h3>
+                        <p class="edu-date">
+                            <span>ACCA Institute</span>
+                            <small> Apr 2015 - stopped</small>
+                        </p>
+                        <span class="gpa">Accountant in Business</span>
+                        <span class="gpa">Management Accounting</span>
+                        <span class="gpa">Financial Accounting</span>
+                        <span class="gpa">Corporate and Business Law</span>
+                        <span class="gpa">Performance Management</span>
+                        <span class="gpa">Financial Reporting</span>
+                        <span class="gpa">Audit and Assurance</span>
+                        <p class="edu-summury">Employers across the globe seek out ACCA-trained professionals – because
+                            they know they have
+                            the strategic thinking, technical skills and professional values to drive their
+                            organisations
+                            forward. We currently work with more than 7,400 Approved Employers and 80 accountancy
+                            partnerships
+                            worldwide
+                        </p>
+                    </div>
+                    <div class="single-edu">
+                        <h3>Laracasts</h3>
+                        <span class="gpa">Laravel from scratch</span>
+                        <span class="gpa">Laravel Mix</span>
+                        <span class="gpa">CSS grids for Everyone</span>
+                        <span class="gpa">Learn Vue 2</span>
+                        <span class="gpa">PHP Bits</span>
+                        <span class="gpa">Learn Redis</span>
+                        <span class="gpa">The PHP Practioner</span>
+                        <span class="gpa">ES2015</span>
+                        <span class="gpa">Laravel Spark</span>
+                        <span class="gpa">Whip Monstrous Code Into Shape</span>
+                        <span class="gpa">SOLID Principles in PHP</span>
+                        <span class="gpa">Design Patterns in PHP</span>
+                        <span class="gpa">Modern CSS Workflow</span>
+                        <span class="gpa">Eloquent Techniques</span>
+                        <span class="gpa">Intermediate Laravel</span>
+                        <span class="gpa">PHP 7 Up and Running</span>
+                        <span class="gpa">Do You React?</span>
+                        <span class="gpa">Advanced Eloquent</span>
+                        <span class="gpa">Object-Oriented Bootcamp</span>
+                        <span class="gpa">Understand Regular Expressions</span>
+                        <span class="gpa">Incremental APIs</span>
+                        <span class="gpa">Real-time Laravel with Socket.io</span>
+                        <span class="gpa">Webpack for everyone</span>
+                        <p class="edu-summury"></p>
+                    </div>
+                    <div class="single-edu">
+                        <h3>Other Sources</h3>
+                        <p class="edu-date">
+                            <span class="gpa">jQuery Advanced</span>
+                            <small> Front End Masters</small>
+                        </p>
+                        <p class="edu-date">
+                            <span class="gpa">Advanced javascript</span>
+                            <small> Front End Masters</small>
+                        </p>
+                        <p class="edu-date">
+                            <span class="gpa">Javascript advanced and DOM</span>
+                            <small> Front End Masters</small>
+                        </p>
+                        <p class="edu-date">
+                            <span class="gpa">Node.js essentials</span>
+                            <small> Plural Sight</small>
+                        </p>
+                        <p class="edu-date">
+                            <span class="gpa">NPM PlayBook</span>
+                            <small> Plural Sight</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="work-exp" class="resume-education work-exp" data-aos-offset="150" data-aos-duration="500">
+    <div class="container">
+        <div id="" class="row">
+            <div class="col-lg-6">
+                <div class="edu position-sticky fixed-top">
+                    <h1>Work Experience</h1>
+                    <p>I am a full stack developer with 5+ year of experience. I have developed and maintained Web and
+                        RESTful
+                        applications using PHP, MySQL, and JavaScript. I always love working whether alone or with a
+                        technically strong team where I can solve complex problems with a good balance of freedom and
+                        responsibility.
+                    </p>
+                    <p>*
+                        <small>details are with each project, please check the portfolio</small>
+                    </p>
+                </div>
+            </div>
+		
+            <div class="col-lg-6">
+                <div class="edu-detail-box">
+                    <div class="single-edu">
+                        <h3>Software Engineer | Team leader</h3>
+                        <p class="edu-date">
+                            <span>Confidential</span> / Oct 2018 - Present</p>
+                        <p class="edu-summury">
+                        <p>Interact with tech lead to understand technology direction/changes, standards and best practices</p>
+                        <p>Resolve technical issues for designers and developers during project lifecycle</p>
+                        <p>Design, build, maintain scalable, high-performance systems</p>
+                        <p>Participate in design discussions, planning and breaking down of features into tasks</p>
+                        <p>Develop and maintain internal and external APIs</p>
+                        <p>Integrate various network monitoring and service management systems into company’s
+                            infrastructure;</p>
+                        <p>Follow agile methodologies of project management and provide time estimates;</p>
+                        <p>Address requirements, feature requests and usability concerns from a the company and its
+                            customers</p>
+                        <p>Enhance the user interaction of company’s websites and portals into various levels of
+                            presentation, access and control for a diverse user base;</p>
+                        <p>Perform application testing, as well as following TDD processes</p>
+                        <p>Author administrator and user manuals/documentation;</p>
+                        <p>Perform ad-hoc internal development work</p>
+                        <p>Collaborate with team members and perform mutual code review.</p>
+                        <p>Maintained and updated micro-services application</p>
+                    </div>
+                    <div class="single-edu">
+                        <h3>Full stack Developer</h3>
+                        <p class="edu-date">
+                            <span>Marketiro</span> / Apr 2017 - Oct 2018</p>
+                        <p class="edu-summury">
+                        <p>Architected and participated in the design, develop and deployment of client/server, multitier applications.</p>
+                        <p>Applied new technologies whenever possible and feasible including non sql databases as Redis and frameworks as React and Vue.</p>
+                        <p>Implemented SEO methods, means and tools in the websites to reach teh optimal benefit and to ease the task on the SEO strategists</p>
+                        <p>Developed based on google measurements of performance including page speed and mobile view to acheive the best possible search enging results organically.</p>
+                        <p>Actively contributed to the requirements creation, designing the applications, testing and deployemnt phases.</p>
+                        <p>Internal web applications to support compoany functions such as task management, leave requests, client requests and complaints.</p>
+                        <p>Created and maintained Email server including the SPF and DKIM while maintaining an outstanding non-spam records</p>
+                        {{--
+                        <p>Upgraded
+                            <a href="#portfolio">Marketiro</a>
+                        </p> --}} {{--
+                                <p>Developed in full
+                                    <a href="#portfolio">ZizoStore</a>
+                                </p> --}} {{--
+                                <p>Coded
+                                    <a href="#portfolio">AhalinaTV</a>
+                                </p> --}} {{--
+                                <p>Developed
+                                    <a>GygyAwed</a>
+                                </p> --}} {{--
+                                <p></p> --}} {{--
+                                <p></p> --}}
